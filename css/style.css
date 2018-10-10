@@ -24,8 +24,17 @@ h6 {
   letter-spacing: 1px;
 }
 
+.page-scroll img {
+  width: 70px;
+}
+
 h1#main-title {
   font-weight: 200;
+  margin-top: 10px;
+}
+
+.logo img {
+  margin-top: -6px;
 }
 
 p {
@@ -184,8 +193,8 @@ button.certificates {
  }
 
   .navbar-brand {
-    margin-left: 5rem;
-
+    margin-left: 1rem;
+    margin-top: 1rem;
   }
 
   .navbar ul li a {
@@ -230,10 +239,28 @@ button.certificates {
   }
 }
 
+@media (max-width: 574px) {
+.logo img {
+  margin-left: 3rem;
+}
+
+.navbar-toggler {
+  margin-right: 3rem;
+}
+}
+
 @media (max-width: 475px) {
 
   .navbar-brand {
-    margin-left: 5rem;
+    margin-left: 1rem;
+  }
+
+  .logo img {
+    margin-left: 2rem;
+  }
+
+  .navbar-toggler {
+    margin-right: 2rem;
   }
 
   img#ps-img {
@@ -248,7 +275,7 @@ button.certificates {
 /* 430px */
 @media (max-width: 430px) {
   .navbar-brand {
-    margin-left: 4rem;
+    margin-left: 1rem;
   }
 
   #main-title {
@@ -277,23 +304,54 @@ button.certificates {
   }
 }
 
-/* 375px */
-@media (max-width: 375px) {
+/* 387px */
+@media (max-width: 387px) {
   #about p {
     text-align: center;
     margin: 15px;
   }
+
+  .navbar-brand {
+    margin-left: .1rem;
+  }
+
+  .navbar-toggler {
+    margin-right: .5rem;
+  }
+}
+
+/* 350px */
+@media (max-width: 350px) {
+  .logo img {
+    margin-left: .1rem;
+  }
 }
 
 
-@media (max-width: 320px) {
+@media (max-width: 334px) {
   .navbar-brand {
-    margin-left: 1.5rem;
+    margin-left: .2rem;
   }
 
   img#ps-img {
     width: 100%;
   }
+}
+
+@media (max-width: 320px) {
+
+  .navbar-brand {
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+
+  .logo img {
+    margin-left: 0rem;
+  }
+  .navbar-toggler {
+    margin-right: 0rem;
+  }
+
 }
 
 
@@ -565,6 +623,10 @@ ul.social-ul li.social-li:nth-child(2) a span::after {
 
 ul.social-ul li.social-li:nth-child(3) a span::before,
 ul.social-ul li.social-li:nth-child(3) a span::after {
+  content: '\f08c';
+}
+ul.social-ul li.social-li:nth-child(4) a span::before,
+ul.social-ul li.social-li:nth-child(4) a span::after {
   content: '\f082';
 }
 
@@ -577,6 +639,10 @@ ul.social-ul li.social-li:nth-child(2) a span::after {
 }
 
 ul.social-ul li.social-li:nth-child(3) a span::after {
+  background: #0077B5;
+}
+
+ul.social-ul li.social-li:nth-child(4) a span::after {
   background: #3b5998;
 }
 
