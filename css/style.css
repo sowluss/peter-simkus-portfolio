@@ -501,7 +501,7 @@ p.my-work-text {
 #contact {
   background: #333;
   color: #e5e5e5;
-  padding-bottom: 7rem;
+  padding-bottom: 8rem;
   text-align: center;
 }
 
@@ -613,7 +613,7 @@ ul.social-ul li.social-li:hover a span::after {
 
 ul.social-ul li.social-li:nth-child(1) a span::before,
 ul.social-ul li.social-li:nth-child(1) a span::after {
-  content: '\f09b';
+  content: '\f08c';
 }
 
 ul.social-ul li.social-li:nth-child(2) a span::before,
@@ -623,15 +623,15 @@ ul.social-ul li.social-li:nth-child(2) a span::after {
 
 ul.social-ul li.social-li:nth-child(3) a span::before,
 ul.social-ul li.social-li:nth-child(3) a span::after {
-  content: '\f08c';
+  content: '\f082';
 }
 ul.social-ul li.social-li:nth-child(4) a span::before,
 ul.social-ul li.social-li:nth-child(4) a span::after {
-  content: '\f082';
+  content: '\f09b';
 }
 
 ul.social-ul li.social-li:nth-child(1) a span::after {
-  background: #6cc644;
+  background: #0077B5;
 }
 
 ul.social-ul li.social-li:nth-child(2) a span::after {
@@ -639,12 +639,13 @@ ul.social-ul li.social-li:nth-child(2) a span::after {
 }
 
 ul.social-ul li.social-li:nth-child(3) a span::after {
-  background: #0077B5;
+  background: #3b5998;
 }
 
 ul.social-ul li.social-li:nth-child(4) a span::after {
-  background: #3b5998;
+  background: #6cc644;
 }
+
 
 button:focus {
   outline: 0;
