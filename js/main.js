@@ -1,4 +1,6 @@
 
+// Navbar
+
 $(window).scroll(function () {
 	if ($('.navbar').offset().top > 50) {
 		$('.fixed-top').addClass('top-nav-collapse');
@@ -6,6 +8,8 @@ $(window).scroll(function () {
 		$('.fixed-top').removeClass('top-nav-collapse');
 	}
 });
+
+// Page scroll
 
 $(function () {
 	$('.page-scroll a').bind('click', function () {
@@ -84,3 +88,12 @@ function init() {
   // Init TypeWriter
   new TypeWriter(txtElement, words, wait);
 }
+
+// Sent me a message button
+
+$(document).ready(function(){
+  $('.toggle').click(function() {
+    $('.contact-form').toggleClass('.active');
+  })
+
+})

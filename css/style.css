@@ -51,6 +51,7 @@ a:focus {
   color: #16617d;
 }
 
+/* NAVIGATION */
 .navbar {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   text-transform: uppercase;
@@ -100,6 +101,7 @@ a:focus {
   color: white;
 }
 
+/* JAVASCRIPT WORD TYPING */
 .txt-type {
   font-size: 3em !important;
   color: #fdbf93;
@@ -119,6 +121,7 @@ a:focus {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+/* SHOWCASE */
 .intro {
   display: table;
   width: 100%;
@@ -126,7 +129,7 @@ a:focus {
   padding: 6rem 0;
   text-align: center;
   color: #e5e5e5;
-  background: url(../img/sunrise-bg.jpg) no-repeat bottom center scroll;
+  background: url(../img/sunrise-bg_sm.jpg) no-repeat bottom center scroll;
   background-color: #333;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -162,215 +165,6 @@ button.certificates {
   letter-spacing: 1px;
 }
 
-/* 991px */
-@media (max-width: 991px) {
-
-  .site-desc p {
-    font-size: .7rem;
-  }
-
-  h4.card-title {
-    font-size: 1rem;
-  }
-
-  .btn-secondary {
-    padding: 2px 8px;
-    font-size: 1rem;
-    transition: .5s;
-    font-weight: 400;
-  }
-
-  button.certificates {
-    font-size: 1rem;
-  }
-}
-
-/* 768px */
-@media (max-width: 767px) {
-  .navbar {
-    position: static;
-    background-color: #333;
- }
-
-  .navbar-brand {
-    margin-left: 1rem;
-    margin-top: 1rem;
-  }
-
-  .navbar ul li a {
-    padding-left: 15px !important;
-  }
-
-  span.txt-type {
-    font-size: 2em !important;
-  }
-
-  section .intro-body {
-    padding-top: 1.5rem;
-  }
-
-  #about p {
-    text-align: center !important;
-  }
-
-  #about img {
-    margin-top: 1rem;
-  }
-
-  .col-md-6 {
-    text-align: center;
-  }
-
-  .first-row .card {
-    margin-top: 30px;
-  }
-
-  .second-row .card {
-    margin-bottom: 30px;
-  }
-
-  .content-section h2 {
-    font-size: 1.5rem;
-  }
-
-  .card-container button {
-    font-size: 1rem;
-    letter-spacing: .5px;
-  }
-}
-
-@media (max-width: 574px) {
-.logo img {
-  margin-left: 3rem;
-}
-
-.navbar-toggler {
-  margin-right: 3rem;
-}
-}
-
-@media (max-width: 475px) {
-
-  .navbar-brand {
-    margin-left: 1rem;
-  }
-
-  .logo img {
-    margin-left: 2rem;
-  }
-
-  .navbar-toggler {
-    margin-right: 2rem;
-  }
-
-  img#ps-img {
-    width: 100%;
-  }
-
-  #contact p {
-    padding: 0 15px !important;
-  }
-}
-
-/* 430px */
-@media (max-width: 430px) {
-  .navbar-brand {
-    margin-left: 1rem;
-  }
-
-  #main-title {
-    font-size: 2rem;
-    font-weight: 500 !important;
-  }
-
-  .content-section h2 {
-    font-size: 1.5rem;
-  }
-
-  .txt-type {
-    display: none;
-  }
-
-  img#ps-img {
-    width: 100%;
-  }
-
-  #portfolio {
-    padding-top: 20px;
-  }
-
-  .col-lg-10 p {
-    padding: 0 15px;
-  }
-}
-
-/* 387px */
-@media (max-width: 387px) {
-  #about p {
-    text-align: center;
-    margin: 15px;
-  }
-
-  .navbar-brand {
-    margin-left: .1rem;
-  }
-
-  .navbar-toggler {
-    margin-right: .5rem;
-  }
-}
-
-/* 350px */
-@media (max-width: 350px) {
-  .logo img {
-    margin-left: .1rem;
-  }
-}
-
-
-@media (max-width: 334px) {
-  .navbar-brand {
-    margin-left: .2rem;
-  }
-
-  img#ps-img {
-    width: 100%;
-  }
-}
-
-@media (max-width: 320px) {
-
-  .navbar-brand {
-    margin-left: 0rem;
-    margin-right: 0rem;
-  }
-
-  .logo img {
-    margin-left: 0rem;
-  }
-  .navbar-toggler {
-    margin-right: 0rem;
-  }
-
-}
-
-
-
-@media (min-width: 767px) {
-  .intro {
-    height: 100%;
-    padding: 0;
-  }
-
-  .brand-heading {
-    font-size: 6rem !important;
-  }
-
-  .intro-text {
-    font-size: 1.7rem;
-  }
-}
-
 .content-section {
   padding: 4rem 0 2rem;
 }
@@ -381,7 +175,7 @@ button.certificates {
   margin: 0 auto;
 }
 
-#about-me-text {
+.about-me-text {
   text-align: justify;
   padding: 0 25px 0 0;
 }
@@ -390,7 +184,7 @@ button.certificates {
   width: 100%;
   padding: 3rem 0;
   color: #e5e5e5;
-  background: url(../img/second-banner.jpg) no-repeat center center scroll;
+  background: url(../img/second-banner_sm.jpg) no-repeat center center scroll;
   background-color: #333;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -450,12 +244,7 @@ img.certificate {
   width: 70%;
 }
 
-@media (min-width: 767px) {
-  .why-section {
-    padding: 6rem 0;
-  }
-}
-
+/* PORTFOLIO CARDS */
 .card-container {
   margin: 0 auto;
 }
@@ -498,17 +287,19 @@ p.my-work-text {
   padding: 0 20px;
 }
 
+/* CONTACT SECTION */
 #contact {
   background: #333;
   color: #e5e5e5;
-  padding-bottom: 8rem;
+  padding-bottom: 9rem;
   text-align: center;
+  position: relative;
 }
 
 footer {
-  margin-top: .75rem;
-  padding-top: 2rem;
-  height: 80px;
+  margin-top: 1.5rem;
+  /* padding-top: 1rem; */
+  height: 40px;
   text-align: center;
 }
 
@@ -625,6 +416,7 @@ ul.social-ul li.social-li:nth-child(3) a span::before,
 ul.social-ul li.social-li:nth-child(3) a span::after {
   content: '\f082';
 }
+
 ul.social-ul li.social-li:nth-child(4) a span::before,
 ul.social-ul li.social-li:nth-child(4) a span::after {
   content: '\f09b';
@@ -646,7 +438,282 @@ ul.social-ul li.social-li:nth-child(4) a span::after {
   background: #6cc644;
 }
 
-
 button:focus {
   outline: 0;
+}
+
+/* CONTACT FORM */
+
+.toggle {
+  position: absolute;
+  width: 68px;
+  height: 35px;
+  background: #fd8201;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  /* border-radius: 50%; */
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  cursor: pointer;
+}
+
+.contact-form {
+  position: fixed;
+  bottom: 0;
+  left: -50%;
+  height: 450px;
+  transform: translate(-50%);
+  width: 350px;
+  background: #e5e5e5;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, .5);
+}
+
+.contact-form.active {
+  bottom: 50%;
+}
+
+form h3 {
+  font-size: 1.5rem;
+}
+
+.form-group textarea {
+  resize: none;
+}
+
+/* Remomoves Blue border in Chrome */
+input:focus,
+input.form-control:focus {
+  outline: none !important;
+  outline-width: 0 !important;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+textarea:focus,
+textarea.form-control:focus {
+  outline: none !important;
+  outline-width: 0 !important;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+.contact-btn {
+  width: 100%;
+}
+
+/*  MEDIA QUERIES  */
+
+/* 991px */
+@media (max-width: 991px) {
+  .site-desc p {
+    font-size: .7rem;
+  }
+
+  h4.card-title {
+    font-size: 1rem;
+  }
+
+  .btn-secondary {
+    padding: 2px 8px;
+    font-size: 1rem;
+    transition: .5s;
+    font-weight: 400;
+  }
+
+  button.certificates {
+    font-size: 1rem;
+  }
+}
+
+/* 768px */
+@media (max-width: 767px) {
+  .navbar {
+    position: static;
+    background-color: #333;
+  }
+
+  .navbar-brand {
+    margin-left: 1rem;
+    margin-top: 1rem;
+  }
+
+  .navbar ul li a {
+    padding-left: 15px !important;
+  }
+
+  span.txt-type {
+    font-size: 2em !important;
+  }
+
+  section .intro-body {
+    padding-top: 1.5rem;
+  }
+
+  #about p {
+    text-align: center !important;
+  }
+
+  #about img {
+    margin-top: 1rem;
+  }
+
+  .col-md-6 {
+    text-align: center;
+  }
+
+  .first-row .card {
+    margin-top: 30px;
+  }
+
+  .second-row .card {
+    margin-bottom: 30px;
+  }
+
+  .content-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .card-container button {
+    font-size: 1rem;
+    letter-spacing: .5px;
+  }
+}
+
+/* 574px */
+@media (max-width: 574px) {
+  .logo img {
+    margin-left: 3rem;
+  }
+
+  .navbar-toggler {
+    margin-right: 3rem;
+  }
+}
+
+/* 475px */
+@media (max-width: 475px) {
+  .navbar-brand {
+    margin-left: 1rem;
+  }
+
+  .logo img {
+    margin-left: 2rem;
+  }
+
+  .navbar-toggler {
+    margin-right: 2rem;
+  }
+
+  img#ps-img {
+    width: 100%;
+  }
+
+  #contact p {
+    padding: 0 15px !important;
+  }
+}
+
+/* 430px */
+@media (max-width: 430px) {
+  .navbar-brand {
+    margin-left: 1rem;
+  }
+
+  #main-title {
+    font-size: 2rem;
+    font-weight: 500 !important;
+  }
+
+  .content-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .txt-type {
+    display: none;
+  }
+
+  img#ps-img {
+    width: 100%;
+  }
+
+  #portfolio {
+    padding-top: 20px;
+  }
+
+  .col-lg-10 p {
+    padding: 0 15px;
+  }
+}
+
+/* 387px */
+@media (max-width: 387px) {
+  #about p {
+    text-align: center;
+    margin: 15px;
+  }
+
+  .navbar-brand {
+    margin-left: .1rem;
+  }
+
+  .navbar-toggler {
+    margin-right: .5rem;
+  }
+}
+
+/* 350px */
+@media (max-width: 350px) {
+  .logo img {
+    margin-left: .1rem;
+  }
+}
+
+/* 334px */
+@media (max-width: 334px) {
+  .navbar-brand {
+    margin-left: .2rem;
+  }
+
+  img#ps-img {
+    width: 100%;
+  }
+}
+
+/* 320px */
+@media (max-width: 320px) {
+  .navbar-brand {
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+
+  .logo img {
+    margin-left: 0rem;
+  }
+
+  .navbar-toggler {
+    margin-right: 0rem;
+  }
+}
+
+/* min  767px */
+@media (min-width: 767px) {
+  .intro {
+    height: 100%;
+    padding: 0;
+  }
+
+  .brand-heading {
+    font-size: 6rem !important;
+  }
+
+  .intro-text {
+    font-size: 1.7rem;
+  }
+
+  .why-section {
+    padding: 6rem 0;
+  }
 }
