@@ -89,11 +89,26 @@ function init() {
   new TypeWriter(txtElement, words, wait);
 }
 
-// Sent me a message button
+// 'Write-me' button
 
-$(document).ready(function(){
-  $('.toggle').click(function() {
-    $('.contact-form').toggleClass('.active');
+// Opens and closed the form
+$(document).ready(function() {
+  $('.toggle').click(function(){
+    $('.contact-form').toggleClass('active');
   })
-
 })
+
+// 'Close' icon closed the form
+$(document).ready(function() {
+  $('.close').click(function(){
+    $('.contact-form').removeClass('active');
+  })
+})
+
+
+
+
+
+
+
+

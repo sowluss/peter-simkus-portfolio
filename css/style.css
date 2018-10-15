@@ -448,30 +448,47 @@ button:focus {
   position: absolute;
   width: 68px;
   height: 35px;
-  background: #fd8201;
+  background: #9e3e13;
   bottom: 0;
   left: 50%;
   transform: translate(-50%);
-  /* border-radius: 50%; */
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
   cursor: pointer;
 }
 
+.toggle:hover {
+  background: #5a6268;
+  color: white;
+  transition: .5s;
+}
+
 .contact-form {
   position: fixed;
-  bottom: 0;
-  left: -50%;
+  bottom: -100%;
+  left: 50%;
   height: 450px;
   transform: translate(-50%);
   width: 350px;
-  background: #e5e5e5;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, .5);
+  /* background: #e5e5e5; */
+  background: #CECECE;
+  /* box-shadow: 0 20px 50px rgba(0, 0, 0, .5); */
+  transition: .5s;
+  border-radius: 2%;
 }
 
 .contact-form.active {
-  bottom: 50%;
+  bottom: 15%;
 }
+
+.close span {
+  position: absolute;
+}
+
+.fa-envelope {
+  margin-top: 10px;
+}
+
 
 form h3 {
   font-size: 1.5rem;
@@ -661,6 +678,17 @@ textarea.form-control:focus {
 
   .navbar-toggler {
     margin-right: .5rem;
+  }
+
+  /* CONTACT FORM */
+  .contact-form {
+    width: 300px;
+    height: auto;
+    padding-bottom: 15px;
+  }
+  .contact-form h3 {
+    font-size: 1.2rem;
+    text-align: center;
   }
 }
 
