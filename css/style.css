@@ -129,7 +129,7 @@ a:focus {
   padding: 6rem 0;
   text-align: center;
   color: #e5e5e5;
-  background: url(../img/sunrise-bg_sm.jpg) no-repeat bottom center scroll;
+  background: url(../img/sunrise-bg.jpg) no-repeat bottom center scroll;
   background-color: #333;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -175,9 +175,8 @@ button.certificates {
   margin: 0 auto;
 }
 
-.about-me-text {
+#about p {
   text-align: justify;
-  padding: 0 25px 0 0;
 }
 
 .why-section {
@@ -192,10 +191,11 @@ button.certificates {
   background-size: cover;
 }
 
-p#why {
-  width: 60%;
+.why-section p {
+  width: 65%;
   text-align: center;
-  margin: 0 auto;
+  margin: 10px auto;
+  padding: 10px;
 }
 
 .certiicates {
@@ -443,7 +443,6 @@ button:focus {
 }
 
 /* CONTACT FORM */
-
 .toggle {
   position: absolute;
   width: 68px;
@@ -470,9 +469,7 @@ button:focus {
   height: 450px;
   transform: translate(-50%);
   width: 350px;
-  /* background: #e5e5e5; */
   background: #CECECE;
-  /* box-shadow: 0 20px 50px rgba(0, 0, 0, .5); */
   transition: .5s;
   border-radius: 2%;
 }
@@ -489,13 +486,17 @@ button:focus {
   margin-top: 10px;
 }
 
-
-form h3 {
+.contact-form h3 {
   font-size: 1.5rem;
+  text-align: center;
 }
 
 .form-group textarea {
   resize: none;
+}
+
+.contact-btn {
+  width: 100%;
 }
 
 /* Remomoves Blue border in Chrome */
@@ -515,10 +516,6 @@ textarea.form-control:focus {
   box-shadow: none;
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
-}
-
-.contact-btn {
-  width: 100%;
 }
 
 /*  MEDIA QUERIES  */
@@ -543,6 +540,7 @@ textarea.form-control:focus {
   button.certificates {
     font-size: 1rem;
   }
+
 }
 
 /* 768px */
@@ -569,12 +567,15 @@ textarea.form-control:focus {
     padding-top: 1.5rem;
   }
 
+  /* ! new adjusment */
   #about p {
-    text-align: center !important;
+    text-align: justify !important;
+    padding: 0 15px;
   }
 
   #about img {
     margin-top: 1rem;
+    width: 100%;
   }
 
   .col-md-6 {
@@ -597,6 +598,14 @@ textarea.form-control:focus {
     font-size: 1rem;
     letter-spacing: .5px;
   }
+
+  .why-section h2 {
+    margin-top: 40px;
+  }
+
+  .why-section p {
+    text-align: justify !important;
+  }
 }
 
 /* 574px */
@@ -607,6 +616,10 @@ textarea.form-control:focus {
 
   .navbar-toggler {
     margin-right: 3rem;
+  }
+
+  #about p {
+    padding: 0 30px;
   }
 }
 
@@ -655,6 +668,9 @@ textarea.form-control:focus {
   img#ps-img {
     width: 100%;
   }
+  .why-section h2 {
+    padding: 0 30px;
+  }
 
   #portfolio {
     padding-top: 20px;
@@ -662,6 +678,27 @@ textarea.form-control:focus {
 
   .col-lg-10 p {
     padding: 0 15px;
+  }
+
+  /* CONTACT FORM */
+  .toggle {
+    display: none;
+  }
+
+  .close {
+    display: none;
+  }
+
+  .contact-form {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-bottom: 1rem;
+    bottom: 0;
+  }
+
+  .contact-form h3 {
+    display: none;
   }
 }
 
@@ -678,17 +715,6 @@ textarea.form-control:focus {
 
   .navbar-toggler {
     margin-right: .5rem;
-  }
-
-  /* CONTACT FORM */
-  .contact-form {
-    width: 300px;
-    height: auto;
-    padding-bottom: 15px;
-  }
-  .contact-form h3 {
-    font-size: 1.2rem;
-    text-align: center;
   }
 }
 
