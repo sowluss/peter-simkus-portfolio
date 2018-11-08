@@ -253,6 +253,11 @@ img.certificate {
   margin-top: 25px;
 }
 
+.card {
+  border: 1px solid #000;
+  border-radius: 0px;
+}
+
 .card-image {
   height: 250px;
 }
@@ -518,7 +523,7 @@ textarea.form-control:focus {
   -webkit-box-shadow: none;
 }
 
-/*  MEDIA QUERIES  */
+/*  ! MEDIA QUERIES  */
 
 /* 991px */
 @media (max-width: 991px) {
@@ -540,11 +545,10 @@ textarea.form-control:focus {
   button.certificates {
     font-size: 1rem;
   }
-
 }
 
 /* 768px */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .navbar {
     position: static;
     background-color: #333;
@@ -570,7 +574,7 @@ textarea.form-control:focus {
   /* ! new adjusment */
   #about p {
     text-align: justify !important;
-    padding: 0 15px;
+    padding: 0 10px;
   }
 
   #about img {
@@ -605,6 +609,7 @@ textarea.form-control:focus {
 
   .why-section p {
     text-align: justify !important;
+    padding: 0px 5px !important;
   }
 }
 
@@ -620,6 +625,10 @@ textarea.form-control:focus {
 
   #about p {
     padding: 0 30px;
+  }
+
+  .why-section p {
+    padding: 0 !important;
   }
 }
 
@@ -706,7 +715,7 @@ textarea.form-control:focus {
 @media (max-width: 387px) {
   #about p {
     text-align: center;
-    margin: 15px;
+    margin: 0px 15px 10px 15px;
   }
 
   .navbar-brand {
