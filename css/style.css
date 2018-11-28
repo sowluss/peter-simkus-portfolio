@@ -476,15 +476,27 @@ button:focus {
   width: 350px;
   background: #CECECE;
   transition: .5s;
-  border-radius: 2%;
+  /* udated 28 11 18 */
+  height: auto;
+  padding: 10px 20px 20px 20px;
 }
 
 .contact-form.active {
   bottom: 15%;
 }
 
-.close span {
+.close {
   position: absolute;
+  right: 0;
+  top: 10;
+  height: 25px;
+  width: 25px;
+  font-size: 1rem;
+}
+
+.close:hover { 
+  color: #b13a1f;
+  transition: .5s ease;
 }
 
 .fa-envelope {
