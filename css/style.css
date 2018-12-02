@@ -12,6 +12,10 @@ body {
   overflow-x: hidden;
 }
 
+#ps-img-md {
+  display: none;
+}
+
 h1,
 h2,
 h3,
@@ -28,7 +32,7 @@ h6 {
   width: 70px;
 }
 
-h1#main-title {
+#main-title {
   font-weight: 200;
   margin-top: 10px;
 }
@@ -135,6 +139,7 @@ a:focus {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .intro-body {
@@ -171,7 +176,7 @@ button.certificates {
 
 #ps-img {
   width: 500px;
-  padding: 0 25px;
+  padding: 0;
   margin: 0 auto;
 }
 
@@ -189,6 +194,7 @@ button.certificates {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .why-section p {
@@ -557,6 +563,22 @@ textarea.form-control:focus {
   button.certificates {
     font-size: 1rem;
   }
+
+  #about {
+    margin-top: 3rem;
+  }
+
+  #ps-img {
+    display: none;
+  }
+
+  #ps-img-md {
+    display: block;
+    width: 350px;
+    margin: 0;
+    padding: 0;
+  }
+  
 }
 
 /* 768px */
@@ -575,6 +597,10 @@ textarea.form-control:focus {
     padding-left: 15px !important;
   }
 
+  #main-title {
+    font-size: 4rem !important;
+  }
+
   span.txt-type {
     font-size: 2em !important;
   }
@@ -586,12 +612,13 @@ textarea.form-control:focus {
   /* ! new adjusment */
   #about p {
     text-align: justify !important;
-    padding: 0 10px;
+    padding: 0;
   }
 
-  #about img {
-    margin-top: 1rem;
-    width: 100%;
+  #ps-img-md {
+    margin: 2rem auto !important;
+    width: 95%;
+    text-align: center;
   }
 
   .col-md-6 {
@@ -635,13 +662,27 @@ textarea.form-control:focus {
     margin-right: 3rem;
   }
 
-  #about p {
-    padding: 0 30px;
+  #main-title {
+    font-size: 3rem !important;
   }
 
-  .why-section p {
+  #about {
+    padding: 0 3rem;
+  }
+
+  #about p {
     padding: 0 !important;
   }
+
+  .why-section {
+    padding: 3rem 0;
+    
+  }
+  
+  .why-section p {
+    width: 80%;
+  }
+
 }
 
 /* 475px */
@@ -674,7 +715,7 @@ textarea.form-control:focus {
   }
 
   #main-title {
-    font-size: 2rem;
+    font-size: 2rem !important;
     font-weight: 500 !important;
   }
 
@@ -727,7 +768,6 @@ textarea.form-control:focus {
 @media (max-width: 387px) {
   #about p {
     text-align: center;
-    margin: 0px 15px 10px 15px;
   }
 
   .navbar-brand {
