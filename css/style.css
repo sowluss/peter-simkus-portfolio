@@ -39,6 +39,7 @@ h6 {
 
 .logo img {
   margin-top: -6px;
+  padding: 5px;
 }
 
 p {
@@ -573,12 +574,15 @@ textarea.form-control:focus {
   }
 
   #ps-img-md {
-    display: block;
+    display:block;
     width: 350px;
     margin: 0;
     padding: 0;
   }
-  
+
+  .intro {
+    background: url(../img/sunrise-bg_sm.jpg) no-repeat bottom center scroll;
+  }
 }
 
 /* 768px */
@@ -587,6 +591,7 @@ textarea.form-control:focus {
     position: static;
     background-color: #333;
   }
+
 
   .navbar-brand {
     margin-left: 1rem;
@@ -609,7 +614,6 @@ textarea.form-control:focus {
     padding-top: 1.5rem;
   }
 
-  /* ! new adjusment */
   #about p {
     text-align: justify !important;
     padding: 0;
